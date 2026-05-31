@@ -20,7 +20,7 @@ export function HeroSection() {
 
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
             {t("title1")}{" "}
-            <span className="bg-gradient-to-r from-accent to-amber-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-accent to-amber-400 bg-clip-text text-transparent" translate="no">
               {t("title2")}
             </span>
           </h1>
@@ -46,12 +46,12 @@ export function HeroSection() {
 
           <div className="mt-12 flex items-center justify-center gap-8 text-sm text-muted">
             <div className="text-center">
-              <p className="text-2xl font-bold text-foreground">500+</p>
+              <p className="text-2xl font-bold text-foreground">6</p>
               <p>{t("productsReviewed")}</p>
             </div>
             <div className="h-10 w-px bg-card-border" />
             <div className="text-center">
-              <p className="text-2xl font-bold text-foreground">50K+</p>
+              <p className="text-2xl font-bold text-foreground">★</p>
               <p>{t("monthlyReaders")}</p>
             </div>
             <div className="h-10 w-px bg-card-border" />

@@ -5,9 +5,16 @@ import { useT, useLocale } from '@/lib/i18n'
 
 export function Footer() {
   const t = useT("footer")
+  const tc = useT("cats")
   const locale = useLocale()
 
-  const cats = ["Kitchen", "Tech", "Tools", "Smart Home", "Everyday Carry"]
+  const categories = [
+    { key: "kitchen", slug: "kitchen" },
+    { key: "tech", slug: "tech" },
+    { key: "tools", slug: "tools" },
+    { key: "smartHome", slug: "smart-home" },
+    { key: "everydayCarry", slug: "everyday-carry" },
+  ]
 
   return (
     <footer className="border-t border-card-border bg-card-bg">
@@ -17,7 +24,7 @@ export function Footer() {
           <div className="space-y-3">
             <Link href={`/${locale}`} className="flex items-center gap-2 text-lg font-bold">
               <span className="text-accent">&#9673;</span>
-              <span>LootNest</span>
+              <span translate="no">LootNest</span>
             </Link>
             <p className="text-sm text-muted">{t("description")}</p>
           </div>
@@ -28,13 +35,13 @@ export function Footer() {
               {t("categories")}
             </h3>
             <ul className="space-y-2">
-              {cats.map((cat) => (
-                <li key={cat}>
+              {categories.map((cat) => (
+                <li key={cat.key}>
                   <Link
-                    href={`/${locale}/category/${cat.toLowerCase().replace(/\s+/g, "-")}`}
+                    href={`/${locale}/category/${cat.slug}`}
                     className="text-sm text-muted transition-colors hover:text-foreground"
                   >
-                    {cat}
+                    {tc(cat.key)}
                   </Link>
                 </li>
               ))}

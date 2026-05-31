@@ -1,6 +1,6 @@
 import { getStaticT } from '@/lib/i18n-server'
 import { notFound } from "next/navigation"
-import { products, localStr, getProductsByCategory } from "@/lib/products"
+import { products, getProductsByCategory } from "@/lib/products"
 import { ProductCard } from "@/components/ProductCard"
 import Link from "next/link"
 import type { Metadata } from "next"
@@ -35,7 +35,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function CategoryPage({ params }: Props) {
   const { category, locale } = await params
-  const t = getStaticT(locale, "meta")
+  const t = getStaticT(locale, "breadcrumb")
+  const th = getStaticT(locale, "home")
 
   const catProducts = getProductsByCategory(category)
   if (catProducts.length === 0) notFound()
@@ -45,7 +46,7 @@ export default async function CategoryPage({ params }: Props) {
   return (
     <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
       <nav className="mb-8 flex items-center gap-2 text-sm text-muted">
-        <Link href={`/${locale}`} className="hover:text-foreground transition-colors">Home</Link>
+        <Link href={`/${locale}`} className="hover:text-foreground transition-colors">{t("home")}</Link>
         <span>/</span>
         <span className="text-foreground">{catName}</span>
       </nav>

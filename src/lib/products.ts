@@ -283,7 +283,9 @@ export function getProductBySlug(slug: string): Product | undefined {
 }
 
 export function getProductsByCategory(category: string): Product[] {
-  return products.filter((p) => p.category === category)
+  // Convert kebab-case slug to Title Case category name for matching
+  const normalized = category.replace(/-/g, " ")
+  return products.filter((p) => p.category.toLowerCase() === normalized.toLowerCase())
 }
 
 export function getCategories(): string[] {

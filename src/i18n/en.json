@@ -5,6 +5,7 @@
     "tech": "Tech",
     "tools": "Tools",
     "smartHome": "Smart Home",
+    "everydayCarry": "EDC",
     "submit": "Submit a Find"
   },
   "lang": {
@@ -12,7 +13,7 @@
     "label": "Language"
   },
   "footer": {
-    "description": "Discovering and reviewing the coolest products from around the web.",
+    "description": "Discovering and reviewing the coolest products. Real tests, honest opinions.",
     "categories": "Categories",
     "lootnest": "LootNest",
     "about": "About",
@@ -20,28 +21,40 @@
     "contact": "Contact",
     "legal": "Legal",
     "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "dmca": "DMCA",
+    "accessibility": "Accessibility",
     "affiliateDisclosure": "Editorial Policy",
     "copyright": "All rights reserved."
+  },
+  "cats": {
+    "kitchen": "Kitchen",
+    "tech": "Tech",
+    "tools": "Tools",
+    "smartHome": "Smart Home",
+    "everydayCarry": "Everyday Carry"
   },
   "hero": {
     "badge": "🔥 Curated Cool Finds",
     "title1": "Discover Products Worth",
     "title2": "Getting Excited About",
-    "description": "We search the web for the most interesting, innovative, and eye-catching products, then test them ourselves. Real reviews, honest opinions, no fluff.",
+    "description": "We find the most interesting and innovative products and test them ourselves. Real reviews, honest opinions, no fluff.",
     "startExploring": "Start Exploring",
     "submitProduct": "Submit a Find",
     "productsReviewed": "Products Reviewed",
-    "monthlyReaders": "Monthly Readers",
-    "honestReviews": "Honest Reviews"
+    "monthlyReaders": "Honest Reviews",
+    "honestReviews": "Independent"
   },
   "home": {
     "latestFinds": "Latest Finds",
-    "freshReviews": "Fresh reviews of the coolest products from around the web.",
+    "freshReviews": "Fresh reviews of the coolest products. Updated regularly.",
     "all": "All",
     "neverMiss": "Never Miss a Find",
-    "newsletterDesc": "The best product discoveries delivered to your inbox every week. No spam, just cool stuff.",
+    "newsletterDesc": "The best product discoveries delivered to your inbox. No spam, just cool stuff.",
     "enterEmail": "Enter your email",
-    "subscribe": "Subscribe"
+    "subscribe": "Subscribe",
+    "noContent": "No reviews yet. Stay tuned!",
+    "descDefault": "Product reviews"
   },
   "product": {
     "pros": "Pros",
@@ -53,23 +66,20 @@
     "published": "Published",
     "theBreakdown": "The Breakdown"
   },
+  "breadcrumb": {
+    "home": "Home"
+  },
   "submit": {
     "title": "Submit a Find",
-    "description": "Found a cool product? Share it with the LootNest community!",
+    "description": "Found a cool product? Share it with the community!",
     "productName": "Product Name",
     "productNamePlaceholder": "e.g. Self-Stirring Coffee Mug",
     "link": "Product or Source Link",
     "linkPlaceholder": "Paste product URL",
     "whyCool": "Why is it cool?",
     "whyCoolPlaceholder": "Tell us what makes this product interesting...",
-    "submit": "Submit Product"
-  },
-  "about": {
-    "title": "About LootNest",
-    "p1": "LootNest was born from a simple obsession: finding the coolest, weirdest, and most useful products on the internet and sharing them with the world.",
-    "p2": "Our mission is simple — find interesting products, test them thoroughly, and give you our honest, unfiltered opinion. No sponsored reviews. No pay-for-play. Just real people testing real products.",
-    "p3": "If it's great, we'll tell you. If it sucks, we'll tell you that too. Our reviews are 100% independent — no brand sponsorships, no pay-for-play. Just honest, real-world testing.",
-    "submitCTA": "Got a product we should review? Submit it here →"
+    "submit": "Submit Product",
+    "comingSoon": "Submission system coming soon!"
   },
   "contact": {
     "title": "Contact Us",
@@ -77,34 +87,42 @@
     "name": "Name",
     "email": "Email",
     "message": "Message",
-    "send": "Send Message"
+    "send": "Send Message",
+    "comingSoon": "Contact form coming soon!"
+  },
+  "about": {
+    "title": "About LootNest",
+    "p1": "LootNest was born from a simple obsession: finding the coolest, most useful products and sharing them with everyone.",
+    "p2": "Our mission: find interesting products, test them thoroughly, and give you our honest, unfiltered opinion. No sponsored reviews. No pay-for-play. Just real people testing real products.",
+    "p3": "If it's great, we'll tell you. If it falls short, you'll hear about that too.",
+    "submitCTA": "Got a product we should review? Submit it here →"
   },
   "privacy": {
     "title": "Privacy Policy",
     "updated": "Last Updated: May 2026",
-    "p1": "LootNest (\"we,\" \"our,\" or \"us\") values your privacy. This Privacy Policy explains how we collect, use, and protect your personal information when you visit our website.",
-    "p2": "We collect information you voluntarily provide, such as your name and email address when you subscribe to our newsletter or submit a contact form. We also automatically collect certain information through cookies and analytics tools.",
+    "p1": "LootNest (\"we,\" \"our,\" or \"us\") values your privacy. This Privacy Policy explains how we collect, use, and protect your personal information.",
+    "p2": "We collect information you voluntarily provide, such as your name and email when you subscribe or submit a form.",
     "h2_1": "Information We Collect",
-    "p3": "We collect information you voluntarily provide, such as your name and email address when you subscribe to our newsletter or submit a contact form. We also automatically collect certain information through cookies and analytics tools.",
+    "p3": "Information you provide voluntarily, plus browsing data collected automatically through cookies and analytics.",
     "h2_2": "How We Use Your Information",
-    "p4": "We use your information to send newsletters, respond to inquiries, improve our website, and analyze how visitors interact with our content.",
+    "p4": "To send newsletters, respond to inquiries, improve our website, and analyze traffic.",
     "h2_3": "Third-Party Services",
-    "p5": "We may use third-party services such as Google Analytics. These services may collect information about your browsing activity.",
+    "p5": "We may use services like Google Analytics. These may collect browsing activity information.",
     "h2_4": "Contact",
-    "p6": "If you have questions about this policy, please contact us through our contact page."
+    "p6": "If you have questions, reach out through our contact page."
   },
   "affiliate": {
     "title": "Editorial Policy",
-    "p1": "At LootNest, our reviews are driven by one thing: honest, hands-on experience. We test every product we feature, and our opinions are never for sale.",
-    "p2": "We do not accept payment or free products in exchange for positive reviews. If a product is great, we'll say so. If it has flaws, you'll hear about those too.",
-    "p3": "From time to time, we may use affiliate links to help support the site. When we do, it never affects our ratings or recommendations — we'll always be upfront about it.",
-    "tldr": "TL;DR: Real reviews, real opinions. No brand tells us what to say. Affiliate links, if any, will be clearly disclosed."
+    "p1": "At LootNest, our reviews are driven by one thing: honest, hands-on experience. We test every product we feature.",
+    "p2": "We do not accept payment or free products in exchange for positive reviews. If it's great, we'll say so. If it has flaws, you'll hear about those too.",
+    "p3": "We may use affiliate links to support the site. This never affects our ratings or recommendations.",
+    "tldr": "TL;DR: Real reviews, real opinions. No brand tells us what to say. Affiliate links are always disclosed."
   },
   "meta": {
     "title": "LootNest — Discover Amazing Products",
     "titleTemplate": "%s | LootNest",
-    "description": "We find the coolest products from around the web, test them, and give you honest reviews. Kitchen gadgets, tech toys, tools, and more.",
+    "description": "We find the coolest products, test them, and give you honest reviews. Kitchen gadgets, tech, tools, and more.",
     "ogTitle": "LootNest — Discover Amazing Products",
-    "ogDescription": "Honest reviews of the coolest products around the web. Kitchen gadgets, tech, tools, and more."
+    "ogDescription": "Honest reviews of the coolest products. Kitchen gadgets, tech, tools, and more."
   }
 }

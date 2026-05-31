@@ -16,6 +16,7 @@ export function Header() {
     { href: `/${locale}/category/tech`, label: t("tech") },
     { href: `/${locale}/category/tools`, label: t("tools") },
     { href: `/${locale}/category/smart-home`, label: t("smartHome") },
+    { href: `/${locale}/category/everyday-carry`, label: t("everydayCarry") },
   ]
 
   return (
@@ -24,10 +25,7 @@ export function Header() {
         {/* Logo */}
         <Link href={`/${locale}`} className="flex items-center gap-2 text-xl font-bold tracking-tight shrink-0">
           <span className="text-accent">&#9673;</span>
-          <span className="text-foreground">LootNest</span>
-          <span className="hidden rounded-full bg-accent/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-accent sm:inline">
-            Beta
-          </span>
+          <span className="text-foreground" translate="no">LootNest</span>
         </Link>
 
         {/* Desktop Nav */}

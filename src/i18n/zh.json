@@ -1,18 +1,19 @@
 {
   "nav": {
     "home": "首页",
-    "kitchen": "厨房",
-    "tech": "科技",
-    "tools": "工具",
+    "kitchen": "厨房好物",
+    "tech": "数码科技",
+    "tools": "实用工具",
     "smartHome": "智能家居",
-    "submit": "投稿"
+    "everydayCarry": "随身好物",
+    "submit": "投稿推荐"
   },
   "lang": {
     "switch": "EN",
     "label": "语言"
   },
   "footer": {
-    "description": "发现并评测全球最有趣的新奇好物。",
+    "description": "发现并评测最有趣的新奇好物，真实体验，绝不废话。",
     "categories": "分类",
     "lootnest": "LootNest",
     "about": "关于我们",
@@ -20,28 +21,40 @@
     "contact": "联系我们",
     "legal": "法律信息",
     "privacy": "隐私政策",
+    "terms": "服务条款",
+    "dmca": "DMCA",
+    "accessibility": "无障碍声明",
     "affiliateDisclosure": "内容声明",
     "copyright": "保留所有权利。"
   },
+  "cats": {
+    "kitchen": "厨房好物",
+    "tech": "数码科技",
+    "tools": "实用工具",
+    "smartHome": "智能家居",
+    "everydayCarry": "随身好物"
+  },
   "hero": {
-    "badge": "🔥 全网新奇发现",
+    "badge": "🔥 每日新奇发现",
     "title1": "发现值得",
     "title2": "入手的新奇好物",
-    "description": "我们从全网搜罗最有趣、最创新、最让人眼前一亮的产品，并亲自上手评测。真实体验，干货分享，绝不废话。",
+    "description": "我们搜罗最有趣、最创新、最让人眼前一亮的产品，亲自上手评测。真实体验，干货分享，绝不废话。",
     "startExploring": "开始探索",
     "submitProduct": "推荐好物",
     "productsReviewed": "已评测产品",
-    "monthlyReaders": "月活读者",
-    "honestReviews": "真实评测"
+    "monthlyReaders": "真实评测",
+    "honestReviews": "独立客观"
   },
   "home": {
     "latestFinds": "最新发现",
-    "freshReviews": "全球新奇好物最新评测，持续更新。",
+    "freshReviews": "新奇好物真实评测，持续更新。",
     "all": "全部",
     "neverMiss": "不错过任何好物",
-    "newsletterDesc": "每周精选新奇好物推荐，直达您的邮箱。无垃圾邮件，只有好东西。",
-    "enterEmail": "输入您的邮箱",
-    "subscribe": "订阅"
+    "newsletterDesc": "每周精选新奇好物推荐，直达邮箱。无垃圾邮件，只有好东西。",
+    "enterEmail": "输入邮箱地址",
+    "subscribe": "订阅",
+    "noContent": "暂无评测内容，敬请期待！",
+    "descDefault": "新奇好物评测"
   },
   "product": {
     "pros": "优点",
@@ -53,23 +66,20 @@
     "published": "发布日期",
     "theBreakdown": "详细评测"
   },
+  "breadcrumb": {
+    "home": "首页"
+  },
   "submit": {
     "title": "投稿推荐",
-    "description": "发现了什么新奇好物？分享给 LootNest 社区吧！",
+    "description": "发现了什么新奇好物？分享给社区吧！",
     "productName": "产品名称",
     "productNamePlaceholder": "例如：自搅拌咖啡杯",
     "link": "产品链接或来源",
     "linkPlaceholder": "粘贴产品链接",
     "whyCool": "为什么推荐？",
     "whyCoolPlaceholder": "告诉我们这个产品有什么特别之处...",
-    "submit": "提交产品"
-  },
-  "about": {
-    "title": "关于 LootNest",
-    "p1": "LootNest 诞生于一个简单的想法：在全网找到最酷、最新奇、最实用的产品，并分享给更多人。",
-    "p2": "我们的使命很简单——发现有趣的产品，亲自测试，然后给你最真实的使用感受。没有赞助软文，没有付费推广，只有真实的人使用真实的物品。",
-    "p3": "东西好用就说好用，不好用也如实告诉你。通过我们的链接购买，我们可能获得少量佣金（不增加你的花费）——这是我们维持运营的方式。",
-    "submitCTA": "有好物推荐？点此投稿 →"
+    "submit": "提交产品",
+    "comingSoon": "投稿系统即将上线，敬请期待！"
   },
   "contact": {
     "title": "联系我们",
@@ -77,7 +87,15 @@
     "name": "姓名",
     "email": "邮箱",
     "message": "留言",
-    "send": "发送留言"
+    "send": "发送留言",
+    "comingSoon": "联系表单即将上线，敬请期待！"
+  },
+  "about": {
+    "title": "关于我们",
+    "p1": "LootNest 诞生于一个简单的想法：找到最酷、最新奇、最实用的产品，并分享给更多人。",
+    "p2": "我们的使命很简单——发现有趣的产品，亲自测试，然后给你最真实的使用感受。没有赞助软文，没有付费推广，只有真实的人测试真实的物品。",
+    "p3": "东西好用就说好用，不好用也如实告诉你。",
+    "submitCTA": "有好物推荐？点此投稿 →"
   },
   "privacy": {
     "title": "隐私政策",
@@ -98,13 +116,13 @@
     "p1": "LootNest 的所有评测内容均基于真实的、亲手体验的过程。我们报道的每个产品都经过实测，我们的观点不作假、不出售。",
     "p2": "我们不接受任何品牌付费或赠品以换取好评。产品好的，我们会如实说；有缺点的，你也会看到。",
     "p3": "未来我们可能会接入联盟链接以支持网站运营。如果有的话，绝不会影响我们的评分和推荐——我们会明确标注。",
-    "tldr": "一句话：真实评测，真实观点。不接受品牌干预。联盟链接（如有）一定明确标注。"
+    "tldr": "一句话：真实评测，真实观点。不接受品牌干预。"
   },
   "meta": {
     "title": "LootNest — 发现值得入手的新奇好物",
     "titleTemplate": "%s | LootNest",
-    "description": "我们发掘全球最有趣的新奇好物，亲自上手评测，给你真实反馈。厨具、科技、工具等各类产品。",
+    "description": "发掘最有趣的新奇好物，亲自上手评测，给你真实反馈。厨房、科技、工具等各类产品。",
     "ogTitle": "LootNest — 发现新奇好物",
-    "ogDescription": "全球新奇好物真实评测。厨房小工具、科技产品、工具等一网打尽。"
+    "ogDescription": "新奇好物真实评测。厨房小工具、科技产品、工具等一网打尽。"
   }
 }
