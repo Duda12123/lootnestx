@@ -1,12 +1,13 @@
 import { getStaticT } from '@/lib/i18n-server'
 import { notFound } from "next/navigation"
-import { getProductBySlug, products, localStr, localArr } from "@/lib/products"
+import { getProductBySlug, getProducts, localStr, localArr } from "@/lib/content"
 import Link from "next/link"
 import type { Metadata } from "next"
 import { Breadcrumbs } from "@/components/Breadcrumbs"
 import { DisqusComments } from "@/components/DisqusComments"
 import { ShareButtons } from "@/components/ShareButtons"
 import { AdSlot } from "@/components/AdSlot"
+import { MarkdownContent } from "@/components/MarkdownContent"
 import { ProductSchema, BreadcrumbSchema } from "@/components/StructuredData"
 
 interface Props {
@@ -15,7 +16,8 @@ interface Props {
 
 export async function generateStaticParams() {
   const params: { slug: string; locale: string }[] = []
-  for (const p of products) {
+  const allProducts = getProducts()
+  for (const p of allProducts) {
     params.push({ slug: p.slug, locale: "en" })
     params.push({ slug: p.slug, locale: "zh" })
   }
@@ -120,6 +122,13 @@ export default async function ProductPage({ params }: Props) {
                 <h2 className="text-xl font-semibold mb-4">{t("theBreakdown")}</h2>
                 <p className="text-muted leading-relaxed">{desc}</p>
               </section>
+
+              {/* Rich markdown review body */}
+              {product.content && (
+                <section>
+                  <MarkdownContent content={product.content} />
+                </section>
+              )}
 
               {/* In-content Ad Slot */}
               <AdSlot type="in-content" />

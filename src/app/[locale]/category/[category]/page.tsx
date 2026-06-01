@@ -1,6 +1,6 @@
 import { getStaticT } from '@/lib/i18n-server'
 import { notFound } from "next/navigation"
-import { products, getProductsByCategory } from "@/lib/products"
+import { getProductsByCategory, getProducts } from "@/lib/content"
 import { ProductCard } from "@/components/ProductCard"
 import Link from "next/link"
 import type { Metadata } from "next"
@@ -10,7 +10,8 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  const cats = [...new Set(products.map((p) => p.category))]
+  const allProducts = getProducts()
+  const cats = [...new Set(allProducts.map((p) => p.category))]
   const params: { category: string; locale: string }[] = []
   for (const c of cats) {
     for (const l of ["en", "zh"]) {

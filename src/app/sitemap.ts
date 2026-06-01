@@ -1,7 +1,8 @@
 import type { MetadataRoute } from "next"
-import { products } from "@/lib/products"
+import { getProducts } from "@/lib/content"
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const products = getProducts()
   const baseUrl = "https://lootnestx.com"
   const locales = ["en", "zh"]
   const categories = [...new Set(products.map((p) => p.category))]

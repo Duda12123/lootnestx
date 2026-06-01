@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { getStaticT, getStaticMessages } from "@/lib/i18n-server"
+import { getStaticT } from "@/lib/i18n-server"
 import { LocaleProvider } from "@/lib/i18n"
 import { Header } from "@/components/Header"
 import { Footer } from "@/components/Footer"
