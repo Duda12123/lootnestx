@@ -119,16 +119,19 @@ export default async function ProductPage({ params }: Props) {
 
           {/* Product video (if present) */}
           {product.video && (
-            <div className="mb-10 overflow-hidden rounded-2xl border border-card-border">
-              <video
-                src={product.video}
-                controls
-                playsInline
-                className="w-full"
-                poster={product.image}
-              >
-                <track kind="captions" />
-              </video>
+            <div className="mb-10 flex justify-center">
+              <div className="overflow-hidden rounded-2xl border border-card-border max-w-sm w-full">
+                <video
+                  src={product.video}
+                  controls
+                  playsInline
+                  preload="metadata"
+                  className="w-full aspect-[3/4] object-contain bg-black"
+                  poster={product.image}
+                >
+                  <track kind="captions" />
+                </video>
+              </div>
             </div>
           )}
 
