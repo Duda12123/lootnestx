@@ -117,6 +117,21 @@ export default async function ProductPage({ params }: Props) {
             <img src={product.image} alt={product.title} className="w-full object-cover" />
           </div>
 
+          {/* Product video (if present) */}
+          {product.video && (
+            <div className="mb-10 overflow-hidden rounded-2xl border border-card-border">
+              <video
+                src={product.video}
+                controls
+                playsInline
+                className="w-full"
+                poster={product.image}
+              >
+                <track kind="captions" />
+              </video>
+            </div>
+          )}
+
           <div className="grid gap-10 lg:grid-cols-3">
             <div className="lg:col-span-2 space-y-8">
               <section>
