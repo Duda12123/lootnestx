@@ -22,10 +22,8 @@ export function GoogleAnalytics({ measurementId }: { measurementId: string }) {
             gtag('js', new Date());
             gtag('config', '${measurementId}', {
               page_path: window.location.pathname,
-              send_page_view: true,
-              debug_mode: true
+              send_page_view: true
             });
-            console.log('[GA] gtag config sent');
           `,
         }}
       />

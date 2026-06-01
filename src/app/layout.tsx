@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google"
 import type { Metadata } from "next"
+import { GoogleAnalytics } from "@/components/GoogleAnalytics"
 import "./globals.css"
 
 const geistSans = Geist({
@@ -27,6 +28,7 @@ export default function RootLayout({
       </head>
       <body className="flex min-h-full flex-col bg-background text-foreground">
         {children}
+        <GoogleAnalytics measurementId={process.env.NEXT_PUBLIC_GA_ID || ""} />
       </body>
     </html>
   )
