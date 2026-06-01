@@ -22,9 +22,9 @@ export function Footer() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="space-y-3">
-            <Link href={`/${locale}`} className="flex items-center gap-2 text-lg font-bold">
-              <span className="text-accent">&#9673;</span>
+            <Link href={`/${locale}`} className="flex items-center gap-0 text-lg font-bold">
               <span translate="no">LootNest</span>
+              <span className="ml-0.5 rounded bg-accent px-1.5 py-0 text-xs font-black text-black">X</span>
             </Link>
             <p className="text-sm text-muted">{t("description")}</p>
           </div>

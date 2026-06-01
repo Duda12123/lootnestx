@@ -23,9 +23,9 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-card-border bg-background/80 backdrop-blur-lg">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
-        <Link href={`/${locale}`} className="flex items-center gap-2 text-xl font-bold tracking-tight shrink-0">
-          <span className="text-accent">&#9673;</span>
+        <Link href={`/${locale}`} className="flex items-center gap-0 text-xl font-bold tracking-tight shrink-0">
           <span className="text-foreground" translate="no">LootNest</span>
+          <span className="ml-0.5 rounded-md bg-accent px-1.5 py-0 text-sm font-black text-black">X</span>
         </Link>
 
         {/* Desktop Nav */}
