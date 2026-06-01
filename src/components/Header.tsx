@@ -20,35 +20,39 @@ export function Header() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 border-b border-card-border bg-background/80 backdrop-blur-lg">
+    <header className="sticky top-0 z-50 border-b border-card-border/50 bg-background/70 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
-        <Link href={`/${locale}`} className="flex items-center gap-0 text-xl font-bold tracking-tight shrink-0">
+        <Link href={`/${locale}`} className="flex items-center gap-0 text-xl font-extrabold tracking-tight shrink-0">
           <span className="text-foreground" translate="no">LootNest</span>
-          <span className="ml-0.5 rounded-md bg-accent px-1.5 py-0 text-sm font-black text-black">X</span>
+          <span className="ml-0.5 rounded-md bg-accent px-1.5 py-0 text-sm font-black text-black shadow-sm shadow-accent/30">X</span>
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden items-center gap-6 text-sm font-medium text-muted md:flex">
+        <nav className="hidden items-center gap-1 text-sm font-medium md:flex">
           {navLinks.map((link) => (
-            <Link key={link.href} href={link.href} className="transition-colors hover:text-foreground">
+            <Link
+              key={link.href}
+              href={link.href}
+              className="rounded-lg px-3 py-2 text-muted transition-colors hover:bg-card-bg hover:text-foreground"
+            >
               {link.label}
             </Link>
           ))}
         </nav>
 
-        {/* Desktop CTA */}
-        <div className="hidden items-center gap-3 md:flex">
+        {/* Desktop actions */}
+        <div className="hidden items-center gap-2 md:flex">
           <LocaleSwitcher />
           <Link
             href={`/${locale}/submit`}
-            className="rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-black transition-colors hover:bg-accent-hover"
+            className="rounded-lg bg-accent px-4 py-2 text-sm font-bold text-black transition-all hover:bg-accent-hover hover:shadow-lg hover:shadow-accent/20"
           >
             {t("submit")}
           </Link>
         </div>
 
-        {/* Mobile hamburger */}
+        {/* Mobile */}
         <div className="flex items-center gap-2 md:hidden">
           <LocaleSwitcher />
           <button
@@ -71,7 +75,7 @@ export function Header() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="border-t border-card-border bg-background/95 backdrop-blur-lg md:hidden">
+        <div className="border-t border-card-border bg-background/95 backdrop-blur-xl md:hidden">
           <nav className="flex flex-col gap-1 px-4 py-3">
             {navLinks.map((link) => (
               <Link
@@ -87,7 +91,7 @@ export function Header() {
             <Link
               href={`/${locale}/submit`}
               onClick={() => setMenuOpen(false)}
-              className="rounded-lg bg-accent px-3 py-2.5 text-center text-sm font-semibold text-black transition-colors hover:bg-accent-hover"
+              className="rounded-lg bg-accent px-3 py-2.5 text-center text-sm font-bold text-black transition-all hover:bg-accent-hover"
             >
               {t("submit")}
             </Link>

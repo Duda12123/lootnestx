@@ -35,21 +35,22 @@
     "everydayCarry": "随身好物"
   },
   "hero": {
-    "badge": "🔥 每日新奇发现",
+    "trending": "🔥 当前热门",
     "title1": "发现值得",
     "title2": "入手的新奇好物",
     "description": "我们搜罗最有趣、最创新、最让人眼前一亮的产品，亲自上手评测。真实体验，干货分享，绝不废话。",
     "startExploring": "开始探索",
     "submitProduct": "推荐好物",
-    "productsReviewed": "已评测产品",
-    "monthlyReaders": "真实评测",
-    "honestReviews": "独立客观"
+    "productsReviewed": "已评测\n产品",
+    "avgRating": "平均\n评分",
+    "honestReviews": "100%\n真实"
   },
   "home": {
     "latestFinds": "最新发现",
     "freshReviews": "新奇好物真实评测，持续更新。",
     "all": "全部",
     "neverMiss": "不错过任何好物",
+    "newsletter": "订阅通讯",
     "newsletterDesc": "每周精选新奇好物推荐，直达邮箱。无垃圾邮件，只有好东西。",
     "enterEmail": "输入邮箱地址",
     "subscribe": "订阅",

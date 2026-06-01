@@ -35,21 +35,22 @@
     "everydayCarry": "Everyday Carry"
   },
   "hero": {
-    "badge": "🔥 Curated Cool Finds",
+    "trending": "🔥 Trending Now",
     "title1": "Discover Products Worth",
     "title2": "Getting Excited About",
-    "description": "We find the most interesting and innovative products and test them ourselves. Real reviews, honest opinions, no fluff.",
+    "description": "We test TikTok's most viral gadgets so you don't waste money on hype. Real hands-on reviews, honest opinions, no fluff.",
     "startExploring": "Start Exploring",
     "submitProduct": "Submit a Find",
-    "productsReviewed": "Products Reviewed",
-    "monthlyReaders": "Honest Reviews",
-    "honestReviews": "Independent"
+    "productsReviewed": "Products\nReviewed",
+    "avgRating": "Average\nRating",
+    "honestReviews": "100%\nHonest"
   },
   "home": {
     "latestFinds": "Latest Finds",
     "freshReviews": "Fresh reviews of the coolest products. Updated regularly.",
     "all": "All",
     "neverMiss": "Never Miss a Find",
+    "newsletter": "Newsletter",
     "newsletterDesc": "The best product discoveries delivered to your inbox. No spam, just cool stuff.",
     "enterEmail": "Enter your email",
     "subscribe": "Subscribe",
