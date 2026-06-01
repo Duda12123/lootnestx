@@ -5,14 +5,12 @@ const locales = ['en', 'zh']
 const defaultLocale = 'en'
 
 function getLocale(request: NextRequest): string {
-  // Check cookie first
+  // Returning visitors keep their preference via cookie
   const cookie = request.cookies.get('NEXT_LOCALE')?.value
   if (cookie && locales.includes(cookie)) return cookie
 
-  // Check Accept-Language header
-  const acceptLanguage = request.headers.get('accept-language') || ''
-  if (acceptLanguage.includes('zh')) return 'zh'
-
+  // New visitors always get English (default)
+  // Users can switch to Chinese via the language switcher
   return defaultLocale
 }
 
