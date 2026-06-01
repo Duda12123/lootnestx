@@ -7,7 +7,6 @@ import { Breadcrumbs } from "@/components/Breadcrumbs"
 import { DisqusComments } from "@/components/DisqusComments"
 import { ReactionButtons } from "@/components/ReactionButtons"
 import { ShareButtons } from "@/components/ShareButtons"
-import { AdSlot } from "@/components/AdSlot"
 import { MarkdownContent } from "@/components/MarkdownContent"
 import { ProductSchema, BreadcrumbSchema } from "@/components/StructuredData"
 
@@ -149,9 +148,6 @@ export default async function ProductPage({ params }: Props) {
                 </section>
               )}
 
-              {/* In-content Ad Slot */}
-              <AdSlot type="in-content" />
-
               <section className="grid gap-4 sm:grid-cols-2">
                 <div className="rounded-xl border border-green-500/20 bg-green-500/5 p-5">
                   <h3 className="flex items-center gap-2 text-sm font-semibold text-green-400 mb-3">
@@ -211,9 +207,6 @@ export default async function ProductPage({ params }: Props) {
             </div>
 
             <aside className="space-y-6">
-              {/* Sidebar Ad */}
-              <AdSlot type="sidebar" />
-
               <div className="space-y-4 rounded-2xl border border-card-border bg-card-bg p-6">
                 <div className="text-center">
                   <p className="text-sm text-muted">{t("price")}</p>
