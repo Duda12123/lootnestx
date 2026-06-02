@@ -4,9 +4,6 @@ import { getProductBySlug, getProducts, localStr, localArr } from "@/lib/content
 import Link from "next/link"
 import type { Metadata } from "next"
 import { Breadcrumbs } from "@/components/Breadcrumbs"
-import { DisqusComments } from "@/components/DisqusComments"
-import { ReactionButtons } from "@/components/ReactionButtons"
-import { ShareButtons } from "@/components/ShareButtons"
 import { MarkdownContent } from "@/components/MarkdownContent"
 import { ProductSchema, BreadcrumbSchema } from "@/components/StructuredData"
 
@@ -194,16 +191,7 @@ export default async function ProductPage({ params }: Props) {
                 <p className="text-muted leading-relaxed">{verdict}</p>
               </section>
 
-              {/* Share Buttons */}
-              <div className="border-t border-card-border pt-6">
-                <ShareButtons title={product.title} url={pageUrl} />
-              </div>
 
-              {/* Reaction Buttons */}
-              <ReactionButtons slug={product.slug} />
-
-              {/* Disqus Comments */}
-              <DisqusComments slug={product.slug} title={product.title} url={pageUrl} />
             </div>
 
             <aside className="space-y-6">

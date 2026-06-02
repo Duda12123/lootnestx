@@ -6,6 +6,7 @@
     "tools": "Tools",
     "smartHome": "Smart Home",
     "everydayCarry": "EDC",
+    "funGames": "Fun & Games",
     "submit": "Submit a Find"
   },
   "lang": {
@@ -32,7 +33,8 @@
     "tech": "Tech",
     "tools": "Tools",
     "smartHome": "Smart Home",
-    "everydayCarry": "Everyday Carry"
+    "everydayCarry": "Everyday Carry",
+    "funGames": "Fun & Games"
   },
   "hero": {
     "trending": "🔥 Trending Now",

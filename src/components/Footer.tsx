@@ -14,6 +14,7 @@ export function Footer() {
     { key: "tools", slug: "tools" },
     { key: "smartHome", slug: "smart-home" },
     { key: "everydayCarry", slug: "everyday-carry" },
+    { key: "funGames", slug: "fun-games" },
   ]
 
   return (

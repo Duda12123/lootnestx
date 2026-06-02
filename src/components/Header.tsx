@@ -17,6 +17,7 @@ export function Header() {
     { href: `/${locale}/category/tools`, label: t("tools") },
     { href: `/${locale}/category/smart-home`, label: t("smartHome") },
     { href: `/${locale}/category/everyday-carry`, label: t("everydayCarry") },
+    { href: `/${locale}/category/fun-games`, label: t("funGames") },
   ]
 
   return (
