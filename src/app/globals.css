@@ -3,10 +3,10 @@
 :root {
   --background: #09090b;
   --foreground: #fafafa;
-  --accent: #f97316;
-  --accent-hover: #ea580c;
-  --accent-soft: rgba(249, 115, 22, 0.1);
-  --accent-glow: rgba(249, 115, 22, 0.15);
+  --accent: #00ff88;
+  --accent-hover: #00cc6a;
+  --accent-soft: rgba(0, 255, 136, 0.1);
+  --accent-glow: rgba(0, 255, 136, 0.15);
   --card-bg: #18181b;
   --card-bg-hover: #1f1f23;
   --card-border: #27272a;
@@ -57,14 +57,14 @@ html {
 
 /* Hero dot pattern */
 .hero-dots {
-  background-image: radial-gradient(circle at 1px 1px, rgba(249, 115, 22, 0.15) 1px, transparent 0);
+  background-image: radial-gradient(circle at 1px 1px, rgba(0, 255, 136, 0.15) 1px, transparent 0);
   background-size: 40px 40px;
 }
 
 /* Card hover glow */
 @keyframes cardPulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(249, 115, 22, 0); }
-  50% { box-shadow: 0 0 40px 5px rgba(249, 115, 22, 0.06); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(0, 255, 136, 0); }
+  50% { box-shadow: 0 0 40px 5px rgba(0, 255, 136, 0.06); }
 }
 
 .card-hover {
@@ -72,13 +72,13 @@ html {
 }
 .card-hover:hover {
   transform: translateY(-4px);
-  border-color: rgba(249, 115, 22, 0.3);
+  border-color: rgba(0, 255, 136, 0.3);
   animation: cardPulse 2s ease-in-out infinite;
 }
 
 /* Gradient text utility */
 .text-gradient {
-  background: linear-gradient(135deg, #f97316 0%, #fb923c 30%, #fbbf24 70%, #f97316 100%);
+  background: linear-gradient(135deg, #00ff88 0%, #33ffaa 30%, #66ffbb 70%, #00ff88 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -91,7 +91,7 @@ html {
 }
 
 .shimmer-bg {
-  background: linear-gradient(90deg, transparent 0%, rgba(249, 115, 22, 0.05) 50%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, rgba(0, 255, 136, 0.05) 50%, transparent 100%);
   background-size: 200% 100%;
   animation: shimmer 3s ease-in-out infinite;
 }
